@@ -1,0 +1,894 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		380E1A021D81BB1E00EF5A81 /* MenuAdoptarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E1A011D81BB1E00EF5A81 /* MenuAdoptarViewController.swift */; };
+		380E1A041D81BF0800EF5A81 /* AdoptarDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E1A031D81BF0800EF5A81 /* AdoptarDetalleViewController.swift */; };
+		380E1A061D81C92400EF5A81 /* AgregarAdoptarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E1A051D81C92400EF5A81 /* AgregarAdoptarViewController.swift */; };
+		380E1A081D81E1C000EF5A81 /* AdoptarDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E1A071D81E1C000EF5A81 /* AdoptarDosViewController.swift */; };
+		380E1A0A1D81E64C00EF5A81 /* MisMascotasFavoritasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E1A091D81E64C00EF5A81 /* MisMascotasFavoritasViewController.swift */; };
+		38194BAA1D7DCDB3008FAC36 /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38194BA91D7DCDB3008FAC36 /* IniciarSesionViewController.swift */; };
+		38194BC21D7E10DD008FAC36 /* AdoptarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38194BC11D7E10DD008FAC36 /* AdoptarViewController.swift */; };
+		38194BC41D7E113D008FAC36 /* NotificacionesAdoptaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38194BC31D7E113D008FAC36 /* NotificacionesAdoptaViewController.swift */; };
+		38194BC61D7F165C008FAC36 /* VeterinariasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38194BC51D7F165C008FAC36 /* VeterinariasViewController.swift */; };
+		38194BDC1D7F5228008FAC36 /* VeterinariosDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38194BDB1D7F5228008FAC36 /* VeterinariosDosViewController.swift */; };
+		38194BE01D7F5335008FAC36 /* TiendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38194BDF1D7F5335008FAC36 /* TiendaViewController.swift */; };
+		38194BE81D7F634D008FAC36 /* ServiciosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38194BE71D7F634D008FAC36 /* ServiciosViewController.swift */; };
+		38194BF61D7F9983008FAC36 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38194BF51D7F9983008FAC36 /* MenuViewController.swift */; };
+		38278A821D959F9000B9BB80 /* SwiftLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38278A811D959F9000B9BB80 /* SwiftLoading.swift */; };
+		382861E31D78FFA900A2A575 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382861E21D78FFA900A2A575 /* RegisterViewController.swift */; };
+		3852EB521DB5263C00596D60 /* albums-ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 3852EB511DB5263C00596D60 /* albums-ico.png */; };
+		3852EB541DB53C6300596D60 /* subir-camara-ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 3852EB531DB53C6300596D60 /* subir-camara-ico.png */; };
+		3852EB591DB53F1300596D60 /* otro-ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 3852EB551DB53F1300596D60 /* otro-ico.png */; };
+		3852EB5A1DB53F1300596D60 /* reptil-ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 3852EB561DB53F1300596D60 /* reptil-ico.png */; };
+		3852EB5B1DB53F1300596D60 /* ave-ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 3852EB571DB53F1300596D60 /* ave-ico.png */; };
+		3852EB5C1DB53F1300596D60 /* insecto-ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 3852EB581DB53F1300596D60 /* insecto-ico.png */; };
+		3852EB681DB5416C00596D60 /* huella-ico-med.png in Resources */ = {isa = PBXBuildFile; fileRef = 3852EB651DB5416C00596D60 /* huella-ico-med.png */; };
+		3852EB691DB5416C00596D60 /* huella-ico-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 3852EB661DB5416C00596D60 /* huella-ico-thumb.png */; };
+		3852EB6A1DB5416C00596D60 /* huella-ico-gde.png in Resources */ = {isa = PBXBuildFile; fileRef = 3852EB671DB5416C00596D60 /* huella-ico-gde.png */; };
+		385B60E91D87511A0063375B /* MiPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B60E81D87511A0063375B /* MiPerfilViewController.swift */; };
+		385CB9881D7A057200E167F4 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385CB9871D7A057200E167F4 /* HomeController.swift */; };
+		3860DD031D99967000DF3E74 /* RedDoctoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DD021D99967000DF3E74 /* RedDoctoresTableViewCell.swift */; };
+		3860DD051D999B4F00DF3E74 /* RedVeterinariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DD041D999B4F00DF3E74 /* RedVeterinariosViewController.swift */; };
+		3860DD0B1D9AE94C00DF3E74 /* AgendarCitaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860DD0A1D9AE94C00DF3E74 /* AgendarCitaViewController.swift */; };
+		386D1D471DAFEC280043C7F2 /* PopupMegusta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386D1D461DAFEC280043C7F2 /* PopupMegusta.swift */; };
+		38745BA31D9193ED0077FE1D /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38745BA21D9193ED0077FE1D /* MealTableViewCell.swift */; };
+		3878AABB1DA41C7D000816B6 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 3878AAB91DA41C7D000816B6 /* lock.png */; };
+		3878AABC1DA41C7D000816B6 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 3878AABA1DA41C7D000816B6 /* mail.png */; };
+		3878AABE1DA41D58000816B6 /* nombre.png in Resources */ = {isa = PBXBuildFile; fileRef = 3878AABD1DA41D58000816B6 /* nombre.png */; };
+		3889DA511D831D5C004B5A5C /* DetalleTiendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889DA501D831D5C004B5A5C /* DetalleTiendaViewController.swift */; };
+		389464EB1DA1CD29004979D7 /* OpcionesPagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389464EA1DA1CD29004979D7 /* OpcionesPagoViewController.swift */; };
+		389464ED1DA1D049004979D7 /* CompraEfectuadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389464EC1DA1D049004979D7 /* CompraEfectuadaViewController.swift */; };
+		389464F01DA2B7DC004979D7 /* FacturacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389464EF1DA2B7DC004979D7 /* FacturacionViewController.swift */; };
+		389464F21DA2B94C004979D7 /* cat-toy.png in Resources */ = {isa = PBXBuildFile; fileRef = 389464F11DA2B94C004979D7 /* cat-toy.png */; };
+		389464F41DA2BBCB004979D7 /* MisPagosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389464F31DA2BBCB004979D7 /* MisPagosViewController.swift */; };
+		389464F61DA2BEA9004979D7 /* CellMisPagosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389464F51DA2BEA9004979D7 /* CellMisPagosTableViewCell.swift */; };
+		389C9FBE1DAD38BF00A508EF /* huella-gris.png in Resources */ = {isa = PBXBuildFile; fileRef = 389C9FBD1DAD38BF00A508EF /* huella-gris.png */; };
+		389C9FC01DAD38F100A508EF /* casita-verde.png in Resources */ = {isa = PBXBuildFile; fileRef = 389C9FBF1DAD38F100A508EF /* casita-verde.png */; };
+		389C9FC21DAD496400A508EF /* share_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 389C9FC11DAD496400A508EF /* share_button.png */; };
+		389C9FC41DAD535B00A508EF /* mapa_ubica_titulo.png in Resources */ = {isa = PBXBuildFile; fileRef = 389C9FC31DAD535B00A508EF /* mapa_ubica_titulo.png */; };
+		389C9FC71DAD588200A508EF /* flecha_derecha.png in Resources */ = {isa = PBXBuildFile; fileRef = 389C9FC51DAD588200A508EF /* flecha_derecha.png */; };
+		389C9FC81DAD588200A508EF /* flecha_izquierda.png in Resources */ = {isa = PBXBuildFile; fileRef = 389C9FC61DAD588200A508EF /* flecha_izquierda.png */; };
+		38BC305F1D9C3353008DD592 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC305E1D9C3352008DD592 /* RatingControl.swift */; };
+		38BC30A91D9C4C42008DD592 /* intro3.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30631D9C4C42008DD592 /* intro3.png */; };
+		38BC30AA1D9C4C42008DD592 /* introgato.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30641D9C4C42008DD592 /* introgato.png */; };
+		38BC30AB1D9C4C42008DD592 /* head-home.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30651D9C4C42008DD592 /* head-home.png */; };
+		38BC30AC1D9C4C42008DD592 /* intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30661D9C4C42008DD592 /* intro.png */; };
+		38BC30AD1D9C4C42008DD592 /* intro1.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30671D9C4C42008DD592 /* intro1.png */; };
+		38BC30AE1D9C4C42008DD592 /* hometienda.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30681D9C4C42008DD592 /* hometienda.png */; };
+		38BC30AF1D9C4C42008DD592 /* registro-mascotas.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30691D9C4C42008DD592 /* registro-mascotas.png */; };
+		38BC30B01D9C4C42008DD592 /* home-adopta.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC306A1D9C4C42008DD592 /* home-adopta.png */; };
+		38BC30B11D9C4C42008DD592 /* home2.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC306B1D9C4C42008DD592 /* home2.png */; };
+		38BC30B21D9C4C42008DD592 /* perro-login.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC306C1D9C4C42008DD592 /* perro-login.png */; };
+		38BC30B51D9C4C42008DD592 /* agregar-vet.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC306F1D9C4C42008DD592 /* agregar-vet.png */; };
+		38BC30B61D9C4C42008DD592 /* gatobebe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30701D9C4C42008DD592 /* gatobebe.jpg */; };
+		38BC30B71D9C4C42008DD592 /* album.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30711D9C4C42008DD592 /* album.png */; };
+		38BC30B81D9C4C42008DD592 /* doc-circulo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30721D9C4C42008DD592 /* doc-circulo1.png */; };
+		38BC30B91D9C4C42008DD592 /* agregar.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30731D9C4C42008DD592 /* agregar.png */; };
+		38BC30BA1D9C4C42008DD592 /* anuncios.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30741D9C4C42008DD592 /* anuncios.png */; };
+		38BC30BB1D9C4C42008DD592 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30751D9C4C42008DD592 /* logo.png */; };
+		38BC30BC1D9C4C42008DD592 /* clinica_activado.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30761D9C4C42008DD592 /* clinica_activado.png */; };
+		38BC30BD1D9C4C42008DD592 /* estetica_activado.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30771D9C4C42008DD592 /* estetica_activado.png */; };
+		38BC30BE1D9C4C42008DD592 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30781D9C4C42008DD592 /* avatar.png */; };
+		38BC30BF1D9C4C42008DD592 /* perro.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30791D9C4C42008DD592 /* perro.png */; };
+		38BC30C01D9C4C42008DD592 /* ave.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC307A1D9C4C42008DD592 /* ave.png */; };
+		38BC30C11D9C4C42008DD592 /* roedor.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC307B1D9C4C42008DD592 /* roedor.png */; };
+		38BC30C21D9C4C42008DD592 /* reptiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC307C1D9C4C42008DD592 /* reptiles.png */; };
+		38BC30C31D9C4C42008DD592 /* otro.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC307D1D9C4C42008DD592 /* otro.png */; };
+		38BC30C41D9C4C42008DD592 /* gatodos.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC307E1D9C4C42008DD592 /* gatodos.png */; };
+		38BC30C51D9C4C42008DD592 /* arana.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC307F1D9C4C42008DD592 /* arana.png */; };
+		38BC30C61D9C4C42008DD592 /* cita_doc.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30801D9C4C42008DD592 /* cita_doc.png */; };
+		38BC30C71D9C4C42008DD592 /* pez.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30811D9C4C42008DD592 /* pez.png */; };
+		38BC30C81D9C4C42008DD592 /* gato.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30821D9C4C42008DD592 /* gato.png */; };
+		38BC30C91D9C4C42008DD592 /* hospital_activado.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30831D9C4C42008DD592 /* hospital_activado.png */; };
+		38BC30CA1D9C4C42008DD592 /* peces.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30841D9C4C42008DD592 /* peces.png */; };
+		38BC30CB1D9C4C42008DD592 /* perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30851D9C4C42008DD592 /* perfil.png */; };
+		38BC30CC1D9C4C42008DD592 /* establecimiento.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30861D9C4C42008DD592 /* establecimiento.png */; };
+		38BC30CD1D9C4C42008DD592 /* corazon_verde.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30871D9C4C42008DD592 /* corazon_verde.png */; };
+		38BC30CE1D9C4C42008DD592 /* hora_consulta.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30881D9C4C42008DD592 /* hora_consulta.png */; };
+		38BC30CF1D9C4C42008DD592 /* yellow_star.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30891D9C4C42008DD592 /* yellow_star.png */; };
+		38BC30D01D9C4C42008DD592 /* flecha_verdeizq.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC308A1D9C4C42008DD592 /* flecha_verdeizq.png */; };
+		38BC30D11D9C4C42008DD592 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC308B1D9C4C42008DD592 /* star.png */; };
+		38BC30D21D9C4C42008DD592 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC308C1D9C4C42008DD592 /* facebook.png */; };
+		38BC30D31D9C4C42008DD592 /* mi_perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC308D1D9C4C42008DD592 /* mi_perfil.png */; };
+		38BC30D41D9C4C42008DD592 /* cascabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC308E1D9C4C42008DD592 /* cascabel.png */; };
+		38BC30D51D9C4C42008DD592 /* servicios.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC308F1D9C4C42008DD592 /* servicios.png */; };
+		38BC30D61D9C4C42008DD592 /* citas.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30901D9C4C42008DD592 /* citas.png */; };
+		38BC30D71D9C4C42008DD592 /* flecha_verde.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30911D9C4C42008DD592 /* flecha_verde.png */; };
+		38BC30D81D9C4C42008DD592 /* tienda.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30921D9C4C42008DD592 /* tienda.png */; };
+		38BC30D91D9C4C42008DD592 /* regresar.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30931D9C4C42008DD592 /* regresar.png */; };
+		38BC30DA1D9C4C42008DD592 /* menu_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30941D9C4C42008DD592 /* menu_dog.png */; };
+		38BC30DB1D9C4C42008DD592 /* filtro-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30951D9C4C42008DD592 /* filtro-4.png */; };
+		38BC30DC1D9C4C42008DD592 /* home_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30961D9C4C42008DD592 /* home_menu.png */; };
+		38BC30DD1D9C4C42008DD592 /* mobile-nav-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30971D9C4C42008DD592 /* mobile-nav-icon.png */; };
+		38BC30DE1D9C4C42008DD592 /* stethoscope_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30981D9C4C42008DD592 /* stethoscope_menu.png */; };
+		38BC30DF1D9C4C42008DD592 /* mail_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30991D9C4C42008DD592 /* mail_n.png */; };
+		38BC30E01D9C4C42008DD592 /* movil.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC309A1D9C4C42008DD592 /* movil.png */; };
+		38BC30E11D9C4C42008DD592 /* expediente.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC309B1D9C4C42008DD592 /* expediente.png */; };
+		38BC30E21D9C4C42008DD592 /* filtro-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC309C1D9C4C42008DD592 /* filtro-1.png */; };
+		38BC30E31D9C4C42008DD592 /* flecha_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC309D1D9C4C42008DD592 /* flecha_menu.png */; };
+		38BC30E41D9C4C42008DD592 /* cerrar_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC309E1D9C4C42008DD592 /* cerrar_menu.png */; };
+		38BC30E51D9C4C42008DD592 /* corazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC309F1D9C4C42008DD592 /* corazon.png */; };
+		38BC30E61D9C4C42008DD592 /* estetica.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30A01D9C4C42008DD592 /* estetica.png */; };
+		38BC30E71D9C4C42008DD592 /* filtro-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30A11D9C4C42008DD592 /* filtro-2.png */; };
+		38BC30E81D9C4C42008DD592 /* estetoscopio.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30A21D9C4C42008DD592 /* estetoscopio.png */; };
+		38BC30E91D9C4C42008DD592 /* filtro-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30A31D9C4C42008DD592 /* filtro-5.png */; };
+		38BC30EA1D9C4C42008DD592 /* cercademi.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30A41D9C4C42008DD592 /* cercademi.png */; };
+		38BC30EB1D9C4C42008DD592 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30A51D9C4C42008DD592 /* menu.png */; };
+		38BC30EC1D9C4C42008DD592 /* hospital.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30A61D9C4C42008DD592 /* hospital.png */; };
+		38BC30EE1D9C4C42008DD592 /* filtro-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30A81D9C4C42008DD592 /* filtro-3.png */; };
+		38BC30F01D9C8E04008DD592 /* huella_gris.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30EF1D9C8E04008DD592 /* huella_gris.png */; };
+		38BC30F31D9C8F0E008DD592 /* apagado.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30F11D9C8F0E008DD592 /* apagado.png */; };
+		38BC30F41D9C8F0E008DD592 /* prendido.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30F21D9C8F0E008DD592 /* prendido.png */; };
+		38BC30F61D9CAC45008DD592 /* carrito.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30F51D9CAC45008DD592 /* carrito.png */; };
+		38BC30F81D9CAF1E008DD592 /* ColTiendaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC30F71D9CAF1E008DD592 /* ColTiendaCollectionViewCell.swift */; };
+		38BC30FA1D9D5FD7008DD592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30F91D9D5FD7008DD592 /* Main.storyboard */; };
+		38BC30FC1D9D83E1008DD592 /* opciones_pago.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BC30FB1D9D83E1008DD592 /* opciones_pago.png */; };
+		38BC30FE1D9D96E9008DD592 /* CarritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC30FD1D9D96E9008DD592 /* CarritoViewController.swift */; };
+		38BEFC461D8E5C6B002D7253 /* gif3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 38BEFC431D8E5C6B002D7253 /* gif3.gif */; };
+		38BEFC471D8E5C6B002D7253 /* gif1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 38BEFC441D8E5C6B002D7253 /* gif1.gif */; };
+		38BEFC481D8E5C6B002D7253 /* gif2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 38BEFC451D8E5C6B002D7253 /* gif2.gif */; };
+		38C770CD1D92EB0A00653FD2 /* ColMascCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C770CC1D92EB0A00653FD2 /* ColMascCollectionViewCell.swift */; };
+		38D11C7C1DB0207E00F39B75 /* fondo_corazones.png in Resources */ = {isa = PBXBuildFile; fileRef = 38D11C7B1DB0207E00F39B75 /* fondo_corazones.png */; };
+		38D11C7E1DB02A0500F39B75 /* MascotaAgregadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D11C7D1DB02A0500F39B75 /* MascotaAgregadaViewController.swift */; };
+		38D11C801DB0455D00F39B75 /* raton_juguete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38D11C7F1DB0455D00F39B75 /* raton_juguete.jpg */; };
+		38D11C821DB048C800F39B75 /* PopUpAnuncioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D11C811DB048C800F39B75 /* PopUpAnuncioViewController.swift */; };
+		38D11C841DB05B2F00F39B75 /* perrito-serviciospaseo.png in Resources */ = {isa = PBXBuildFile; fileRef = 38D11C831DB05B2F00F39B75 /* perrito-serviciospaseo.png */; };
+		38D11C861DB0648A00F39B75 /* popUpProximaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D11C851DB0648A00F39B75 /* popUpProximaViewController.swift */; };
+		38D11C881DB0662F00F39B75 /* CitaGuardadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D11C871DB0662F00F39B75 /* CitaGuardadaViewController.swift */; };
+		38DC36C11DA2E74B002150DD /* dog-food-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 38DC36C01DA2E74B002150DD /* dog-food-1.png */; };
+		38E5FD331D78B70D00FE95DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E5FD321D78B70D00FE95DD /* AppDelegate.swift */; };
+		38E5FD351D78B70D00FE95DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E5FD341D78B70D00FE95DD /* ViewController.swift */; };
+		38E5FD3D1D78B70D00FE95DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E5FD3B1D78B70D00FE95DD /* LaunchScreen.storyboard */; };
+		38E5FD561D78BB0B00FE95DD /* PagePantalla2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E5FD551D78BB0B00FE95DD /* PagePantalla2Controller.swift */; };
+		38F44DCC1D91F4E3007D8FD4 /* ColMascotasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F44DCB1D91F4E3007D8FD4 /* ColMascotasCollectionViewCell.swift */; };
+		38F5C33B1DAEB84F007B6468 /* fondo_popup.png in Resources */ = {isa = PBXBuildFile; fileRef = 38F5C33A1DAEB84F007B6468 /* fondo_popup.png */; };
+		38F5C33D1DAEBC02007B6468 /* huella_cirulo.png in Resources */ = {isa = PBXBuildFile; fileRef = 38F5C33C1DAEBC02007B6468 /* huella_cirulo.png */; };
+		38F5C33F1DAEBCBE007B6468 /* caracol.png in Resources */ = {isa = PBXBuildFile; fileRef = 38F5C33E1DAEBCBE007B6468 /* caracol.png */; };
+		38F5C3411DAFE5CB007B6468 /* corazon_sin_fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = 38F5C3401DAFE5CA007B6468 /* corazon_sin_fondo.png */; };
+		38F893991D90650F00FC6120 /* VeterinariasDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F893981D90650F00FC6120 /* VeterinariasDosViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		380E1A011D81BB1E00EF5A81 /* MenuAdoptarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAdoptarViewController.swift; sourceTree = "<group>"; };
+		380E1A031D81BF0800EF5A81 /* AdoptarDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptarDetalleViewController.swift; sourceTree = "<group>"; };
+		380E1A051D81C92400EF5A81 /* AgregarAdoptarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgregarAdoptarViewController.swift; sourceTree = "<group>"; };
+		380E1A071D81E1C000EF5A81 /* AdoptarDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptarDosViewController.swift; sourceTree = "<group>"; };
+		380E1A091D81E64C00EF5A81 /* MisMascotasFavoritasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MisMascotasFavoritasViewController.swift; sourceTree = "<group>"; };
+		38194BA91D7DCDB3008FAC36 /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
+		38194BC11D7E10DD008FAC36 /* AdoptarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptarViewController.swift; sourceTree = "<group>"; };
+		38194BC31D7E113D008FAC36 /* NotificacionesAdoptaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionesAdoptaViewController.swift; sourceTree = "<group>"; };
+		38194BC51D7F165C008FAC36 /* VeterinariasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeterinariasViewController.swift; sourceTree = "<group>"; };
+		38194BDB1D7F5228008FAC36 /* VeterinariosDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeterinariosDosViewController.swift; sourceTree = "<group>"; };
+		38194BDF1D7F5335008FAC36 /* TiendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiendaViewController.swift; sourceTree = "<group>"; };
+		38194BE71D7F634D008FAC36 /* ServiciosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosViewController.swift; sourceTree = "<group>"; };
+		38194BF51D7F9983008FAC36 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		38278A811D959F9000B9BB80 /* SwiftLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLoading.swift; sourceTree = "<group>"; };
+		382861E21D78FFA900A2A575 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3852EB511DB5263C00596D60 /* albums-ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "albums-ico.png"; sourceTree = "<group>"; };
+		3852EB531DB53C6300596D60 /* subir-camara-ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "subir-camara-ico.png"; sourceTree = "<group>"; };
+		3852EB551DB53F1300596D60 /* otro-ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "otro-ico.png"; sourceTree = "<group>"; };
+		3852EB561DB53F1300596D60 /* reptil-ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reptil-ico.png"; sourceTree = "<group>"; };
+		3852EB571DB53F1300596D60 /* ave-ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ave-ico.png"; sourceTree = "<group>"; };
+		3852EB581DB53F1300596D60 /* insecto-ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "insecto-ico.png"; sourceTree = "<group>"; };
+		3852EB651DB5416C00596D60 /* huella-ico-med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "huella-ico-med.png"; sourceTree = "<group>"; };
+		3852EB661DB5416C00596D60 /* huella-ico-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "huella-ico-thumb.png"; sourceTree = "<group>"; };
+		3852EB671DB5416C00596D60 /* huella-ico-gde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "huella-ico-gde.png"; sourceTree = "<group>"; };
+		385B60E81D87511A0063375B /* MiPerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiPerfilViewController.swift; sourceTree = "<group>"; };
+		385CB9871D7A057200E167F4 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		3860DD021D99967000DF3E74 /* RedDoctoresTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedDoctoresTableViewCell.swift; sourceTree = "<group>"; };
+		3860DD041D999B4F00DF3E74 /* RedVeterinariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedVeterinariosViewController.swift; sourceTree = "<group>"; };
+		3860DD0A1D9AE94C00DF3E74 /* AgendarCitaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendarCitaViewController.swift; sourceTree = "<group>"; };
+		386D1D461DAFEC280043C7F2 /* PopupMegusta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupMegusta.swift; sourceTree = "<group>"; };
+		38745BA21D9193ED0077FE1D /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		3878AAB91DA41C7D000816B6 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
+		3878AABA1DA41C7D000816B6 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		3878AABD1DA41D58000816B6 /* nombre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nombre.png; sourceTree = "<group>"; };
+		3889DA501D831D5C004B5A5C /* DetalleTiendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleTiendaViewController.swift; sourceTree = "<group>"; };
+		389464EA1DA1CD29004979D7 /* OpcionesPagoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpcionesPagoViewController.swift; sourceTree = "<group>"; };
+		389464EC1DA1D049004979D7 /* CompraEfectuadaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompraEfectuadaViewController.swift; sourceTree = "<group>"; };
+		389464EF1DA2B7DC004979D7 /* FacturacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacturacionViewController.swift; sourceTree = "<group>"; };
+		389464F11DA2B94C004979D7 /* cat-toy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat-toy.png"; sourceTree = "<group>"; };
+		389464F31DA2BBCB004979D7 /* MisPagosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MisPagosViewController.swift; sourceTree = "<group>"; };
+		389464F51DA2BEA9004979D7 /* CellMisPagosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellMisPagosTableViewCell.swift; sourceTree = "<group>"; };
+		389C9FBD1DAD38BF00A508EF /* huella-gris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "huella-gris.png"; sourceTree = "<group>"; };
+		389C9FBF1DAD38F100A508EF /* casita-verde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "casita-verde.png"; sourceTree = "<group>"; };
+		389C9FC11DAD496400A508EF /* share_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share_button.png; sourceTree = "<group>"; };
+		389C9FC31DAD535B00A508EF /* mapa_ubica_titulo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapa_ubica_titulo.png; sourceTree = "<group>"; };
+		389C9FC51DAD588200A508EF /* flecha_derecha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flecha_derecha.png; sourceTree = "<group>"; };
+		389C9FC61DAD588200A508EF /* flecha_izquierda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flecha_izquierda.png; sourceTree = "<group>"; };
+		38BC305E1D9C3352008DD592 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		38BC30631D9C4C42008DD592 /* intro3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro3.png; sourceTree = "<group>"; };
+		38BC30641D9C4C42008DD592 /* introgato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = introgato.png; sourceTree = "<group>"; };
+		38BC30651D9C4C42008DD592 /* head-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "head-home.png"; sourceTree = "<group>"; };
+		38BC30661D9C4C42008DD592 /* intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro.png; sourceTree = "<group>"; };
+		38BC30671D9C4C42008DD592 /* intro1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro1.png; sourceTree = "<group>"; };
+		38BC30681D9C4C42008DD592 /* hometienda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hometienda.png; sourceTree = "<group>"; };
+		38BC30691D9C4C42008DD592 /* registro-mascotas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "registro-mascotas.png"; sourceTree = "<group>"; };
+		38BC306A1D9C4C42008DD592 /* home-adopta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-adopta.png"; sourceTree = "<group>"; };
+		38BC306B1D9C4C42008DD592 /* home2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home2.png; sourceTree = "<group>"; };
+		38BC306C1D9C4C42008DD592 /* perro-login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perro-login.png"; sourceTree = "<group>"; };
+		38BC306F1D9C4C42008DD592 /* agregar-vet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "agregar-vet.png"; sourceTree = "<group>"; };
+		38BC30701D9C4C42008DD592 /* gatobebe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gatobebe.jpg; sourceTree = "<group>"; };
+		38BC30711D9C4C42008DD592 /* album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = album.png; sourceTree = "<group>"; };
+		38BC30721D9C4C42008DD592 /* doc-circulo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doc-circulo1.png"; sourceTree = "<group>"; };
+		38BC30731D9C4C42008DD592 /* agregar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = agregar.png; sourceTree = "<group>"; };
+		38BC30741D9C4C42008DD592 /* anuncios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anuncios.png; sourceTree = "<group>"; };
+		38BC30751D9C4C42008DD592 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		38BC30761D9C4C42008DD592 /* clinica_activado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clinica_activado.png; sourceTree = "<group>"; };
+		38BC30771D9C4C42008DD592 /* estetica_activado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estetica_activado.png; sourceTree = "<group>"; };
+		38BC30781D9C4C42008DD592 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		38BC30791D9C4C42008DD592 /* perro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perro.png; sourceTree = "<group>"; };
+		38BC307A1D9C4C42008DD592 /* ave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ave.png; sourceTree = "<group>"; };
+		38BC307B1D9C4C42008DD592 /* roedor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roedor.png; sourceTree = "<group>"; };
+		38BC307C1D9C4C42008DD592 /* reptiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reptiles.png; sourceTree = "<group>"; };
+		38BC307D1D9C4C42008DD592 /* otro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = otro.png; sourceTree = "<group>"; };
+		38BC307E1D9C4C42008DD592 /* gatodos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gatodos.png; sourceTree = "<group>"; };
+		38BC307F1D9C4C42008DD592 /* arana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arana.png; sourceTree = "<group>"; };
+		38BC30801D9C4C42008DD592 /* cita_doc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cita_doc.png; sourceTree = "<group>"; };
+		38BC30811D9C4C42008DD592 /* pez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pez.png; sourceTree = "<group>"; };
+		38BC30821D9C4C42008DD592 /* gato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gato.png; sourceTree = "<group>"; };
+		38BC30831D9C4C42008DD592 /* hospital_activado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hospital_activado.png; sourceTree = "<group>"; };
+		38BC30841D9C4C42008DD592 /* peces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peces.png; sourceTree = "<group>"; };
+		38BC30851D9C4C42008DD592 /* perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perfil.png; sourceTree = "<group>"; };
+		38BC30861D9C4C42008DD592 /* establecimiento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = establecimiento.png; sourceTree = "<group>"; };
+		38BC30871D9C4C42008DD592 /* corazon_verde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corazon_verde.png; sourceTree = "<group>"; };
+		38BC30881D9C4C42008DD592 /* hora_consulta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hora_consulta.png; sourceTree = "<group>"; };
+		38BC30891D9C4C42008DD592 /* yellow_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_star.png; sourceTree = "<group>"; };
+		38BC308A1D9C4C42008DD592 /* flecha_verdeizq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flecha_verdeizq.png; sourceTree = "<group>"; };
+		38BC308B1D9C4C42008DD592 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		38BC308C1D9C4C42008DD592 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		38BC308D1D9C4C42008DD592 /* mi_perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mi_perfil.png; sourceTree = "<group>"; };
+		38BC308E1D9C4C42008DD592 /* cascabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cascabel.png; sourceTree = "<group>"; };
+		38BC308F1D9C4C42008DD592 /* servicios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = servicios.png; sourceTree = "<group>"; };
+		38BC30901D9C4C42008DD592 /* citas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = citas.png; sourceTree = "<group>"; };
+		38BC30911D9C4C42008DD592 /* flecha_verde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flecha_verde.png; sourceTree = "<group>"; };
+		38BC30921D9C4C42008DD592 /* tienda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tienda.png; sourceTree = "<group>"; };
+		38BC30931D9C4C42008DD592 /* regresar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = regresar.png; sourceTree = "<group>"; };
+		38BC30941D9C4C42008DD592 /* menu_dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_dog.png; sourceTree = "<group>"; };
+		38BC30951D9C4C42008DD592 /* filtro-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filtro-4.png"; sourceTree = "<group>"; };
+		38BC30961D9C4C42008DD592 /* home_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_menu.png; sourceTree = "<group>"; };
+		38BC30971D9C4C42008DD592 /* mobile-nav-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-nav-icon.png"; sourceTree = "<group>"; };
+		38BC30981D9C4C42008DD592 /* stethoscope_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stethoscope_menu.png; sourceTree = "<group>"; };
+		38BC30991D9C4C42008DD592 /* mail_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail_n.png; sourceTree = "<group>"; };
+		38BC309A1D9C4C42008DD592 /* movil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movil.png; sourceTree = "<group>"; };
+		38BC309B1D9C4C42008DD592 /* expediente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expediente.png; sourceTree = "<group>"; };
+		38BC309C1D9C4C42008DD592 /* filtro-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filtro-1.png"; sourceTree = "<group>"; };
+		38BC309D1D9C4C42008DD592 /* flecha_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flecha_menu.png; sourceTree = "<group>"; };
+		38BC309E1D9C4C42008DD592 /* cerrar_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cerrar_menu.png; sourceTree = "<group>"; };
+		38BC309F1D9C4C42008DD592 /* corazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corazon.png; sourceTree = "<group>"; };
+		38BC30A01D9C4C42008DD592 /* estetica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estetica.png; sourceTree = "<group>"; };
+		38BC30A11D9C4C42008DD592 /* filtro-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filtro-2.png"; sourceTree = "<group>"; };
+		38BC30A21D9C4C42008DD592 /* estetoscopio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estetoscopio.png; sourceTree = "<group>"; };
+		38BC30A31D9C4C42008DD592 /* filtro-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filtro-5.png"; sourceTree = "<group>"; };
+		38BC30A41D9C4C42008DD592 /* cercademi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cercademi.png; sourceTree = "<group>"; };
+		38BC30A51D9C4C42008DD592 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		38BC30A61D9C4C42008DD592 /* hospital.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hospital.png; sourceTree = "<group>"; };
+		38BC30A81D9C4C42008DD592 /* filtro-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filtro-3.png"; sourceTree = "<group>"; };
+		38BC30EF1D9C8E04008DD592 /* huella_gris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huella_gris.png; sourceTree = "<group>"; };
+		38BC30F11D9C8F0E008DD592 /* apagado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apagado.png; sourceTree = "<group>"; };
+		38BC30F21D9C8F0E008DD592 /* prendido.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prendido.png; sourceTree = "<group>"; };
+		38BC30F51D9CAC45008DD592 /* carrito.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carrito.png; sourceTree = "<group>"; };
+		38BC30F71D9CAF1E008DD592 /* ColTiendaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColTiendaCollectionViewCell.swift; sourceTree = "<group>"; };
+		38BC30F91D9D5FD7008DD592 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		38BC30FB1D9D83E1008DD592 /* opciones_pago.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opciones_pago.png; sourceTree = "<group>"; };
+		38BC30FD1D9D96E9008DD592 /* CarritoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarritoViewController.swift; sourceTree = "<group>"; };
+		38BEFC431D8E5C6B002D7253 /* gif3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif3.gif; sourceTree = "<group>"; };
+		38BEFC441D8E5C6B002D7253 /* gif1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif1.gif; sourceTree = "<group>"; };
+		38BEFC451D8E5C6B002D7253 /* gif2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif2.gif; sourceTree = "<group>"; };
+		38C770CC1D92EB0A00653FD2 /* ColMascCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColMascCollectionViewCell.swift; sourceTree = "<group>"; };
+		38D11C7B1DB0207E00F39B75 /* fondo_corazones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo_corazones.png; sourceTree = "<group>"; };
+		38D11C7D1DB02A0500F39B75 /* MascotaAgregadaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MascotaAgregadaViewController.swift; sourceTree = "<group>"; };
+		38D11C7F1DB0455D00F39B75 /* raton_juguete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = raton_juguete.jpg; sourceTree = "<group>"; };
+		38D11C811DB048C800F39B75 /* PopUpAnuncioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpAnuncioViewController.swift; sourceTree = "<group>"; };
+		38D11C831DB05B2F00F39B75 /* perrito-serviciospaseo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perrito-serviciospaseo.png"; sourceTree = "<group>"; };
+		38D11C851DB0648A00F39B75 /* popUpProximaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popUpProximaViewController.swift; sourceTree = "<group>"; };
+		38D11C871DB0662F00F39B75 /* CitaGuardadaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitaGuardadaViewController.swift; sourceTree = "<group>"; };
+		38DC36C01DA2E74B002150DD /* dog-food-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dog-food-1.png"; sourceTree = "<group>"; };
+		38E5FD2F1D78B70D00FE95DD /* zungu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zungu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E5FD321D78B70D00FE95DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		38E5FD341D78B70D00FE95DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		38E5FD3C1D78B70D00FE95DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		38E5FD3E1D78B70D00FE95DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38E5FD551D78BB0B00FE95DD /* PagePantalla2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagePantalla2Controller.swift; sourceTree = "<group>"; };
+		38F44DCB1D91F4E3007D8FD4 /* ColMascotasCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColMascotasCollectionViewCell.swift; sourceTree = "<group>"; };
+		38F5C33A1DAEB84F007B6468 /* fondo_popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo_popup.png; sourceTree = "<group>"; };
+		38F5C33C1DAEBC02007B6468 /* huella_cirulo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huella_cirulo.png; sourceTree = "<group>"; };
+		38F5C33E1DAEBCBE007B6468 /* caracol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caracol.png; sourceTree = "<group>"; };
+		38F5C3401DAFE5CA007B6468 /* corazon_sin_fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corazon_sin_fondo.png; sourceTree = "<group>"; };
+		38F893981D90650F00FC6120 /* VeterinariasDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeterinariasDosViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38E5FD2C1D78B70D00FE95DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38745BA41D9193F10077FE1D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				389464F51DA2BEA9004979D7 /* CellMisPagosTableViewCell.swift */,
+				38BC30F71D9CAF1E008DD592 /* ColTiendaCollectionViewCell.swift */,
+				38745BA21D9193ED0077FE1D /* MealTableViewCell.swift */,
+				38F44DCB1D91F4E3007D8FD4 /* ColMascotasCollectionViewCell.swift */,
+				38C770CC1D92EB0A00653FD2 /* ColMascCollectionViewCell.swift */,
+				3860DD021D99967000DF3E74 /* RedDoctoresTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		389464EE1DA1D063004979D7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38E5FD341D78B70D00FE95DD /* ViewController.swift */,
+				382861E21D78FFA900A2A575 /* RegisterViewController.swift */,
+				38194BA91D7DCDB3008FAC36 /* IniciarSesionViewController.swift */,
+				385CB9871D7A057200E167F4 /* HomeController.swift */,
+				38E5FD551D78BB0B00FE95DD /* PagePantalla2Controller.swift */,
+				38194BC31D7E113D008FAC36 /* NotificacionesAdoptaViewController.swift */,
+				38194BC11D7E10DD008FAC36 /* AdoptarViewController.swift */,
+				38194BC51D7F165C008FAC36 /* VeterinariasViewController.swift */,
+				38194BDF1D7F5335008FAC36 /* TiendaViewController.swift */,
+				38194BE71D7F634D008FAC36 /* ServiciosViewController.swift */,
+				38194BDB1D7F5228008FAC36 /* VeterinariosDosViewController.swift */,
+				38194BF51D7F9983008FAC36 /* MenuViewController.swift */,
+				380E1A011D81BB1E00EF5A81 /* MenuAdoptarViewController.swift */,
+				380E1A031D81BF0800EF5A81 /* AdoptarDetalleViewController.swift */,
+				380E1A051D81C92400EF5A81 /* AgregarAdoptarViewController.swift */,
+				380E1A071D81E1C000EF5A81 /* AdoptarDosViewController.swift */,
+				380E1A091D81E64C00EF5A81 /* MisMascotasFavoritasViewController.swift */,
+				3889DA501D831D5C004B5A5C /* DetalleTiendaViewController.swift */,
+				38F893981D90650F00FC6120 /* VeterinariasDosViewController.swift */,
+				385B60E81D87511A0063375B /* MiPerfilViewController.swift */,
+				38278A811D959F9000B9BB80 /* SwiftLoading.swift */,
+				3860DD041D999B4F00DF3E74 /* RedVeterinariosViewController.swift */,
+				3860DD0A1D9AE94C00DF3E74 /* AgendarCitaViewController.swift */,
+				38BC305E1D9C3352008DD592 /* RatingControl.swift */,
+				38BC30FD1D9D96E9008DD592 /* CarritoViewController.swift */,
+				389464EA1DA1CD29004979D7 /* OpcionesPagoViewController.swift */,
+				389464EC1DA1D049004979D7 /* CompraEfectuadaViewController.swift */,
+				389464EF1DA2B7DC004979D7 /* FacturacionViewController.swift */,
+				389464F31DA2BBCB004979D7 /* MisPagosViewController.swift */,
+				38D11C7D1DB02A0500F39B75 /* MascotaAgregadaViewController.swift */,
+				38D11C871DB0662F00F39B75 /* CitaGuardadaViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		38BC30621D9C4C35008DD592 /* imagen */ = {
+			isa = PBXGroup;
+			children = (
+				3852EB531DB53C6300596D60 /* subir-camara-ico.png */,
+				3852EB511DB5263C00596D60 /* albums-ico.png */,
+				38D11C7F1DB0455D00F39B75 /* raton_juguete.jpg */,
+				38D11C7B1DB0207E00F39B75 /* fondo_corazones.png */,
+				38F5C3401DAFE5CA007B6468 /* corazon_sin_fondo.png */,
+				38F5C33E1DAEBCBE007B6468 /* caracol.png */,
+				389C9FC51DAD588200A508EF /* flecha_derecha.png */,
+				38F5C33A1DAEB84F007B6468 /* fondo_popup.png */,
+				3852EB551DB53F1300596D60 /* otro-ico.png */,
+				3852EB561DB53F1300596D60 /* reptil-ico.png */,
+				3852EB651DB5416C00596D60 /* huella-ico-med.png */,
+				3852EB661DB5416C00596D60 /* huella-ico-thumb.png */,
+				3852EB671DB5416C00596D60 /* huella-ico-gde.png */,
+				3852EB571DB53F1300596D60 /* ave-ico.png */,
+				3852EB581DB53F1300596D60 /* insecto-ico.png */,
+				389C9FC61DAD588200A508EF /* flecha_izquierda.png */,
+				38F5C33C1DAEBC02007B6468 /* huella_cirulo.png */,
+				389C9FC31DAD535B00A508EF /* mapa_ubica_titulo.png */,
+				389C9FBD1DAD38BF00A508EF /* huella-gris.png */,
+				389C9FC11DAD496400A508EF /* share_button.png */,
+				389C9FBF1DAD38F100A508EF /* casita-verde.png */,
+				3878AAB91DA41C7D000816B6 /* lock.png */,
+				3878AABD1DA41D58000816B6 /* nombre.png */,
+				3878AABA1DA41C7D000816B6 /* mail.png */,
+				38DC36C01DA2E74B002150DD /* dog-food-1.png */,
+				389464F11DA2B94C004979D7 /* cat-toy.png */,
+				38BC30EF1D9C8E04008DD592 /* huella_gris.png */,
+				38BC30631D9C4C42008DD592 /* intro3.png */,
+				38BC30641D9C4C42008DD592 /* introgato.png */,
+				38BC30651D9C4C42008DD592 /* head-home.png */,
+				38BC30661D9C4C42008DD592 /* intro.png */,
+				38BC30671D9C4C42008DD592 /* intro1.png */,
+				38BC30681D9C4C42008DD592 /* hometienda.png */,
+				38BC30691D9C4C42008DD592 /* registro-mascotas.png */,
+				38BC306A1D9C4C42008DD592 /* home-adopta.png */,
+				38BC306B1D9C4C42008DD592 /* home2.png */,
+				38BC306C1D9C4C42008DD592 /* perro-login.png */,
+				38BC30F11D9C8F0E008DD592 /* apagado.png */,
+				38BC30F21D9C8F0E008DD592 /* prendido.png */,
+				38BC306F1D9C4C42008DD592 /* agregar-vet.png */,
+				38BC30701D9C4C42008DD592 /* gatobebe.jpg */,
+				38BC30711D9C4C42008DD592 /* album.png */,
+				38BC30721D9C4C42008DD592 /* doc-circulo1.png */,
+				38BC30731D9C4C42008DD592 /* agregar.png */,
+				38BC30741D9C4C42008DD592 /* anuncios.png */,
+				38BC30751D9C4C42008DD592 /* logo.png */,
+				38BC30761D9C4C42008DD592 /* clinica_activado.png */,
+				38BC30771D9C4C42008DD592 /* estetica_activado.png */,
+				38BC30781D9C4C42008DD592 /* avatar.png */,
+				38BC30791D9C4C42008DD592 /* perro.png */,
+				38BC307A1D9C4C42008DD592 /* ave.png */,
+				38BC307B1D9C4C42008DD592 /* roedor.png */,
+				38BC307C1D9C4C42008DD592 /* reptiles.png */,
+				38BC307D1D9C4C42008DD592 /* otro.png */,
+				38BC307E1D9C4C42008DD592 /* gatodos.png */,
+				38BC307F1D9C4C42008DD592 /* arana.png */,
+				38BC30801D9C4C42008DD592 /* cita_doc.png */,
+				38BC30F51D9CAC45008DD592 /* carrito.png */,
+				38BC30811D9C4C42008DD592 /* pez.png */,
+				38BC30821D9C4C42008DD592 /* gato.png */,
+				38BC30831D9C4C42008DD592 /* hospital_activado.png */,
+				38BC30841D9C4C42008DD592 /* peces.png */,
+				38BC30851D9C4C42008DD592 /* perfil.png */,
+				38BC30861D9C4C42008DD592 /* establecimiento.png */,
+				38BC30871D9C4C42008DD592 /* corazon_verde.png */,
+				38BC30881D9C4C42008DD592 /* hora_consulta.png */,
+				38BC30891D9C4C42008DD592 /* yellow_star.png */,
+				38BC308A1D9C4C42008DD592 /* flecha_verdeizq.png */,
+				38BC308B1D9C4C42008DD592 /* star.png */,
+				38BC308C1D9C4C42008DD592 /* facebook.png */,
+				38BC308D1D9C4C42008DD592 /* mi_perfil.png */,
+				38BC308E1D9C4C42008DD592 /* cascabel.png */,
+				38BC308F1D9C4C42008DD592 /* servicios.png */,
+				38BC30901D9C4C42008DD592 /* citas.png */,
+				38BC30911D9C4C42008DD592 /* flecha_verde.png */,
+				38BC30921D9C4C42008DD592 /* tienda.png */,
+				38BC30931D9C4C42008DD592 /* regresar.png */,
+				38BC30941D9C4C42008DD592 /* menu_dog.png */,
+				38BC30951D9C4C42008DD592 /* filtro-4.png */,
+				38BC30961D9C4C42008DD592 /* home_menu.png */,
+				38BC30971D9C4C42008DD592 /* mobile-nav-icon.png */,
+				38BC30981D9C4C42008DD592 /* stethoscope_menu.png */,
+				38BC30991D9C4C42008DD592 /* mail_n.png */,
+				38BC30FB1D9D83E1008DD592 /* opciones_pago.png */,
+				38BC309A1D9C4C42008DD592 /* movil.png */,
+				38BC309B1D9C4C42008DD592 /* expediente.png */,
+				38D11C831DB05B2F00F39B75 /* perrito-serviciospaseo.png */,
+				38BC309C1D9C4C42008DD592 /* filtro-1.png */,
+				38BC309D1D9C4C42008DD592 /* flecha_menu.png */,
+				38BC309E1D9C4C42008DD592 /* cerrar_menu.png */,
+				38BC309F1D9C4C42008DD592 /* corazon.png */,
+				38BC30A01D9C4C42008DD592 /* estetica.png */,
+				38BC30A11D9C4C42008DD592 /* filtro-2.png */,
+				38BC30A21D9C4C42008DD592 /* estetoscopio.png */,
+				38BC30A31D9C4C42008DD592 /* filtro-5.png */,
+				38BC30A41D9C4C42008DD592 /* cercademi.png */,
+				38BC30A51D9C4C42008DD592 /* menu.png */,
+				38BC30A61D9C4C42008DD592 /* hospital.png */,
+				38BC30A81D9C4C42008DD592 /* filtro-3.png */,
+			);
+			name = imagen;
+			sourceTree = "<group>";
+		};
+		38BEFC421D8E5C61002D7253 /* videos */ = {
+			isa = PBXGroup;
+			children = (
+				38BEFC431D8E5C6B002D7253 /* gif3.gif */,
+				38BEFC441D8E5C6B002D7253 /* gif1.gif */,
+				38BEFC451D8E5C6B002D7253 /* gif2.gif */,
+			);
+			name = videos;
+			sourceTree = "<group>";
+		};
+		38E5FD261D78B70D00FE95DD = {
+			isa = PBXGroup;
+			children = (
+				38E5FD311D78B70D00FE95DD /* zungu */,
+				38E5FD301D78B70D00FE95DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38E5FD301D78B70D00FE95DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38E5FD2F1D78B70D00FE95DD /* zungu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38E5FD311D78B70D00FE95DD /* zungu */ = {
+			isa = PBXGroup;
+			children = (
+				38F5C3421DAFE661007B6468 /* PopupController */,
+				389464EE1DA1D063004979D7 /* ViewController */,
+				38BC30621D9C4C35008DD592 /* imagen */,
+				38745BA41D9193F10077FE1D /* Cell */,
+				38BEFC421D8E5C61002D7253 /* videos */,
+				38E5FD321D78B70D00FE95DD /* AppDelegate.swift */,
+				38E5FD3B1D78B70D00FE95DD /* LaunchScreen.storyboard */,
+				38BC30F91D9D5FD7008DD592 /* Main.storyboard */,
+				38E5FD3E1D78B70D00FE95DD /* Info.plist */,
+			);
+			path = zungu;
+			sourceTree = "<group>";
+		};
+		38F5C3421DAFE661007B6468 /* PopupController */ = {
+			isa = PBXGroup;
+			children = (
+				386D1D461DAFEC280043C7F2 /* PopupMegusta.swift */,
+				38D11C811DB048C800F39B75 /* PopUpAnuncioViewController.swift */,
+				38D11C851DB0648A00F39B75 /* popUpProximaViewController.swift */,
+			);
+			name = PopupController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38E5FD2E1D78B70D00FE95DD /* zungu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38E5FD411D78B70D00FE95DD /* Build configuration list for PBXNativeTarget "zungu" */;
+			buildPhases = (
+				38E5FD2B1D78B70D00FE95DD /* Sources */,
+				38E5FD2C1D78B70D00FE95DD /* Frameworks */,
+				38E5FD2D1D78B70D00FE95DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zungu;
+			productName = zungu;
+			productReference = 38E5FD2F1D78B70D00FE95DD /* zungu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38E5FD271D78B70D00FE95DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Giovanni Aranda";
+				TargetAttributes = {
+					38E5FD2E1D78B70D00FE95DD = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 38E5FD2A1D78B70D00FE95DD /* Build configuration list for PBXProject "zungu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38E5FD261D78B70D00FE95DD;
+			productRefGroup = 38E5FD301D78B70D00FE95DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38E5FD2E1D78B70D00FE95DD /* zungu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38E5FD2D1D78B70D00FE95DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BC30DB1D9C4C42008DD592 /* filtro-4.png in Resources */,
+				38BC30C61D9C4C42008DD592 /* cita_doc.png in Resources */,
+				38BC30D01D9C4C42008DD592 /* flecha_verdeizq.png in Resources */,
+				38BC30E91D9C4C42008DD592 /* filtro-5.png in Resources */,
+				38BC30B21D9C4C42008DD592 /* perro-login.png in Resources */,
+				38BC30AB1D9C4C42008DD592 /* head-home.png in Resources */,
+				38BC30CC1D9C4C42008DD592 /* establecimiento.png in Resources */,
+				38BC30C51D9C4C42008DD592 /* arana.png in Resources */,
+				38BC30BA1D9C4C42008DD592 /* anuncios.png in Resources */,
+				38BC30E01D9C4C42008DD592 /* movil.png in Resources */,
+				38BC30D91D9C4C42008DD592 /* regresar.png in Resources */,
+				38BC30CD1D9C4C42008DD592 /* corazon_verde.png in Resources */,
+				38BC30D61D9C4C42008DD592 /* citas.png in Resources */,
+				38BC30F61D9CAC45008DD592 /* carrito.png in Resources */,
+				389C9FC21DAD496400A508EF /* share_button.png in Resources */,
+				38BC30A91D9C4C42008DD592 /* intro3.png in Resources */,
+				3852EB5A1DB53F1300596D60 /* reptil-ico.png in Resources */,
+				38BC30D11D9C4C42008DD592 /* star.png in Resources */,
+				38BC30C11D9C4C42008DD592 /* roedor.png in Resources */,
+				38BC30C71D9C4C42008DD592 /* pez.png in Resources */,
+				38BC30F01D9C8E04008DD592 /* huella_gris.png in Resources */,
+				38BC30DA1D9C4C42008DD592 /* menu_dog.png in Resources */,
+				38BC30B91D9C4C42008DD592 /* agregar.png in Resources */,
+				38BC30CA1D9C4C42008DD592 /* peces.png in Resources */,
+				38BC30C81D9C4C42008DD592 /* gato.png in Resources */,
+				38BC30DF1D9C4C42008DD592 /* mail_n.png in Resources */,
+				38BEFC471D8E5C6B002D7253 /* gif1.gif in Resources */,
+				389C9FC41DAD535B00A508EF /* mapa_ubica_titulo.png in Resources */,
+				38BC30E11D9C4C42008DD592 /* expediente.png in Resources */,
+				38BC30BF1D9C4C42008DD592 /* perro.png in Resources */,
+				38F5C33F1DAEBCBE007B6468 /* caracol.png in Resources */,
+				38BC30D21D9C4C42008DD592 /* facebook.png in Resources */,
+				38BC30AE1D9C4C42008DD592 /* hometienda.png in Resources */,
+				3878AABC1DA41C7D000816B6 /* mail.png in Resources */,
+				38BC30BE1D9C4C42008DD592 /* avatar.png in Resources */,
+				38BC30C91D9C4C42008DD592 /* hospital_activado.png in Resources */,
+				38BC30FA1D9D5FD7008DD592 /* Main.storyboard in Resources */,
+				38BC30B61D9C4C42008DD592 /* gatobebe.jpg in Resources */,
+				3852EB5B1DB53F1300596D60 /* ave-ico.png in Resources */,
+				38BEFC481D8E5C6B002D7253 /* gif2.gif in Resources */,
+				38D11C7C1DB0207E00F39B75 /* fondo_corazones.png in Resources */,
+				38BC30D51D9C4C42008DD592 /* servicios.png in Resources */,
+				389C9FC71DAD588200A508EF /* flecha_derecha.png in Resources */,
+				389C9FC81DAD588200A508EF /* flecha_izquierda.png in Resources */,
+				38F5C33B1DAEB84F007B6468 /* fondo_popup.png in Resources */,
+				3852EB6A1DB5416C00596D60 /* huella-ico-gde.png in Resources */,
+				38BC30C21D9C4C42008DD592 /* reptiles.png in Resources */,
+				3878AABB1DA41C7D000816B6 /* lock.png in Resources */,
+				38BC30B81D9C4C42008DD592 /* doc-circulo1.png in Resources */,
+				38BC30FC1D9D83E1008DD592 /* opciones_pago.png in Resources */,
+				38D11C841DB05B2F00F39B75 /* perrito-serviciospaseo.png in Resources */,
+				38BC30B71D9C4C42008DD592 /* album.png in Resources */,
+				38BC30B01D9C4C42008DD592 /* home-adopta.png in Resources */,
+				38BC30DD1D9C4C42008DD592 /* mobile-nav-icon.png in Resources */,
+				389C9FC01DAD38F100A508EF /* casita-verde.png in Resources */,
+				38BC30BC1D9C4C42008DD592 /* clinica_activado.png in Resources */,
+				3852EB681DB5416C00596D60 /* huella-ico-med.png in Resources */,
+				3878AABE1DA41D58000816B6 /* nombre.png in Resources */,
+				38BC30D41D9C4C42008DD592 /* cascabel.png in Resources */,
+				3852EB5C1DB53F1300596D60 /* insecto-ico.png in Resources */,
+				38BC30EE1D9C4C42008DD592 /* filtro-3.png in Resources */,
+				38BC30AD1D9C4C42008DD592 /* intro1.png in Resources */,
+				38BC30AA1D9C4C42008DD592 /* introgato.png in Resources */,
+				38BC30D71D9C4C42008DD592 /* flecha_verde.png in Resources */,
+				38BC30B51D9C4C42008DD592 /* agregar-vet.png in Resources */,
+				38BC30E81D9C4C42008DD592 /* estetoscopio.png in Resources */,
+				38BC30E41D9C4C42008DD592 /* cerrar_menu.png in Resources */,
+				38BC30AF1D9C4C42008DD592 /* registro-mascotas.png in Resources */,
+				38BC30D81D9C4C42008DD592 /* tienda.png in Resources */,
+				38DC36C11DA2E74B002150DD /* dog-food-1.png in Resources */,
+				38BC30CF1D9C4C42008DD592 /* yellow_star.png in Resources */,
+				38BC30E51D9C4C42008DD592 /* corazon.png in Resources */,
+				38BC30B11D9C4C42008DD592 /* home2.png in Resources */,
+				38F5C3411DAFE5CB007B6468 /* corazon_sin_fondo.png in Resources */,
+				38E5FD3D1D78B70D00FE95DD /* LaunchScreen.storyboard in Resources */,
+				38BC30DE1D9C4C42008DD592 /* stethoscope_menu.png in Resources */,
+				3852EB591DB53F1300596D60 /* otro-ico.png in Resources */,
+				38BC30EC1D9C4C42008DD592 /* hospital.png in Resources */,
+				38BC30BB1D9C4C42008DD592 /* logo.png in Resources */,
+				3852EB541DB53C6300596D60 /* subir-camara-ico.png in Resources */,
+				38BC30C01D9C4C42008DD592 /* ave.png in Resources */,
+				38F5C33D1DAEBC02007B6468 /* huella_cirulo.png in Resources */,
+				38D11C801DB0455D00F39B75 /* raton_juguete.jpg in Resources */,
+				38BC30EB1D9C4C42008DD592 /* menu.png in Resources */,
+				3852EB521DB5263C00596D60 /* albums-ico.png in Resources */,
+				38BC30D31D9C4C42008DD592 /* mi_perfil.png in Resources */,
+				38BEFC461D8E5C6B002D7253 /* gif3.gif in Resources */,
+				38BC30E21D9C4C42008DD592 /* filtro-1.png in Resources */,
+				3852EB691DB5416C00596D60 /* huella-ico-thumb.png in Resources */,
+				38BC30BD1D9C4C42008DD592 /* estetica_activado.png in Resources */,
+				38BC30E31D9C4C42008DD592 /* flecha_menu.png in Resources */,
+				38BC30DC1D9C4C42008DD592 /* home_menu.png in Resources */,
+				38BC30AC1D9C4C42008DD592 /* intro.png in Resources */,
+				38BC30E71D9C4C42008DD592 /* filtro-2.png in Resources */,
+				38BC30F41D9C8F0E008DD592 /* prendido.png in Resources */,
+				38BC30C31D9C4C42008DD592 /* otro.png in Resources */,
+				38BC30CE1D9C4C42008DD592 /* hora_consulta.png in Resources */,
+				38BC30E61D9C4C42008DD592 /* estetica.png in Resources */,
+				38BC30C41D9C4C42008DD592 /* gatodos.png in Resources */,
+				38BC30EA1D9C4C42008DD592 /* cercademi.png in Resources */,
+				38BC30CB1D9C4C42008DD592 /* perfil.png in Resources */,
+				38BC30F31D9C8F0E008DD592 /* apagado.png in Resources */,
+				389464F21DA2B94C004979D7 /* cat-toy.png in Resources */,
+				389C9FBE1DAD38BF00A508EF /* huella-gris.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38E5FD2B1D78B70D00FE95DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380E1A061D81C92400EF5A81 /* AgregarAdoptarViewController.swift in Sources */,
+				3889DA511D831D5C004B5A5C /* DetalleTiendaViewController.swift in Sources */,
+				389464EB1DA1CD29004979D7 /* OpcionesPagoViewController.swift in Sources */,
+				38E5FD561D78BB0B00FE95DD /* PagePantalla2Controller.swift in Sources */,
+				38D11C861DB0648A00F39B75 /* popUpProximaViewController.swift in Sources */,
+				38C770CD1D92EB0A00653FD2 /* ColMascCollectionViewCell.swift in Sources */,
+				38194BC41D7E113D008FAC36 /* NotificacionesAdoptaViewController.swift in Sources */,
+				38F893991D90650F00FC6120 /* VeterinariasDosViewController.swift in Sources */,
+				38E5FD351D78B70D00FE95DD /* ViewController.swift in Sources */,
+				389464ED1DA1D049004979D7 /* CompraEfectuadaViewController.swift in Sources */,
+				38D11C7E1DB02A0500F39B75 /* MascotaAgregadaViewController.swift in Sources */,
+				3860DD051D999B4F00DF3E74 /* RedVeterinariosViewController.swift in Sources */,
+				38278A821D959F9000B9BB80 /* SwiftLoading.swift in Sources */,
+				38194BC21D7E10DD008FAC36 /* AdoptarViewController.swift in Sources */,
+				3860DD0B1D9AE94C00DF3E74 /* AgendarCitaViewController.swift in Sources */,
+				38D11C821DB048C800F39B75 /* PopUpAnuncioViewController.swift in Sources */,
+				38F44DCC1D91F4E3007D8FD4 /* ColMascotasCollectionViewCell.swift in Sources */,
+				38D11C881DB0662F00F39B75 /* CitaGuardadaViewController.swift in Sources */,
+				38E5FD331D78B70D00FE95DD /* AppDelegate.swift in Sources */,
+				38194BAA1D7DCDB3008FAC36 /* IniciarSesionViewController.swift in Sources */,
+				38194BE81D7F634D008FAC36 /* ServiciosViewController.swift in Sources */,
+				38194BF61D7F9983008FAC36 /* MenuViewController.swift in Sources */,
+				385B60E91D87511A0063375B /* MiPerfilViewController.swift in Sources */,
+				38745BA31D9193ED0077FE1D /* MealTableViewCell.swift in Sources */,
+				38BC30FE1D9D96E9008DD592 /* CarritoViewController.swift in Sources */,
+				380E1A0A1D81E64C00EF5A81 /* MisMascotasFavoritasViewController.swift in Sources */,
+				389464F01DA2B7DC004979D7 /* FacturacionViewController.swift in Sources */,
+				3860DD031D99967000DF3E74 /* RedDoctoresTableViewCell.swift in Sources */,
+				386D1D471DAFEC280043C7F2 /* PopupMegusta.swift in Sources */,
+				38194BDC1D7F5228008FAC36 /* VeterinariosDosViewController.swift in Sources */,
+				389464F41DA2BBCB004979D7 /* MisPagosViewController.swift in Sources */,
+				382861E31D78FFA900A2A575 /* RegisterViewController.swift in Sources */,
+				38194BC61D7F165C008FAC36 /* VeterinariasViewController.swift in Sources */,
+				389464F61DA2BEA9004979D7 /* CellMisPagosTableViewCell.swift in Sources */,
+				385CB9881D7A057200E167F4 /* HomeController.swift in Sources */,
+				38BC30F81D9CAF1E008DD592 /* ColTiendaCollectionViewCell.swift in Sources */,
+				38194BE01D7F5335008FAC36 /* TiendaViewController.swift in Sources */,
+				380E1A021D81BB1E00EF5A81 /* MenuAdoptarViewController.swift in Sources */,
+				380E1A041D81BF0800EF5A81 /* AdoptarDetalleViewController.swift in Sources */,
+				38BC305F1D9C3353008DD592 /* RatingControl.swift in Sources */,
+				380E1A081D81E1C000EF5A81 /* AdoptarDosViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		38E5FD3B1D78B70D00FE95DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38E5FD3C1D78B70D00FE95DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38E5FD3F1D78B70D00FE95DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		38E5FD401D78B70D00FE95DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38E5FD421D78B70D00FE95DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = zungu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.init-code.zungu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "zungu/zungu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		38E5FD431D78B70D00FE95DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = zungu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.init-code.zungu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "zungu/zungu-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38E5FD2A1D78B70D00FE95DD /* Build configuration list for PBXProject "zungu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38E5FD3F1D78B70D00FE95DD /* Debug */,
+				38E5FD401D78B70D00FE95DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38E5FD411D78B70D00FE95DD /* Build configuration list for PBXNativeTarget "zungu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38E5FD421D78B70D00FE95DD /* Debug */,
+				38E5FD431D78B70D00FE95DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38E5FD271D78B70D00FE95DD /* Project object */;
+}
