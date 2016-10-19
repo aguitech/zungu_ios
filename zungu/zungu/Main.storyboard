@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wqK-aa-cE2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9f2-Gf-ML1">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -158,8 +158,11 @@
                                                                     <constraint firstAttribute="width" constant="50" id="ofF-B4-Pg6"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCf-hh-5Y8">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="menuBtnMiPerfil" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCf-hh-5Y8">
                                                                 <frame key="frameInset" width="160" height="170"/>
+                                                                <connections>
+                                                                    <action selector="irPerfil:" destination="4Mn-lC-LYz" eventType="touchUpInside" id="mZO-ae-66i"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.46666666670000001" green="0.65098039220000004" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -576,7 +579,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Fyu-B5-YVM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mWw-Jz-RSK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="608"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6og-pt-3Ja">
@@ -874,7 +877,7 @@
                         <viewControllerLayoutGuide type="bottom" id="F4R-Qw-PGI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MFL-mu-s6O">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="608"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sfD-jD-Bsy">
@@ -1131,7 +1134,7 @@
         <!--Mi Perfil View Controller-->
         <scene sceneID="tY5-Di-CUF">
             <objects>
-                <viewController id="uh0-dq-cH0" customClass="MiPerfilViewController" customModule="zungu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="miPerfil" id="uh0-dq-cH0" customClass="MiPerfilViewController" customModule="zungu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I1h-rP-AHg"/>
                         <viewControllerLayoutGuide type="bottom" id="pBk-p0-uHI"/>
@@ -1152,10 +1155,14 @@
                                                 <frame key="frameInset" width="320" height="59"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Mk-bS-e5p">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMV-GU-I84">
                                                 <frame key="frameInset" minX="8" minY="8" width="20" height="15"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
+                                                <state key="normal" image="menu.png"/>
+                                                <connections>
+                                                    <segue destination="4Mn-lC-LYz" kind="show" id="o8m-qU-hve"/>
+                                                </connections>
+                                            </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gato.png" translatesAutoresizingMaskIntoConstraints="NO" id="oKn-Hc-xxM">
                                                 <frame key="frameInset" minX="49" minY="8" width="40" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1183,28 +1190,28 @@
                                                 <frame key="frameInset" minY="8" width="320" height="130"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sarai Gómez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1v-Un-ZlD">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="nombrePerfil" text="Sarai Gómez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1v-Un-ZlD">
                                                         <frame key="frameInset" minX="136" minY="17" width="176" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sarai.gomez@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JY-XF-cHO">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="emailPerfil" text="sarai.gomez@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JY-XF-cHO">
                                                         <frame key="frameInset" minX="136" minY="41" width="176" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="044 4123124 44" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjX-az-TiB">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="telefonoPerfil" text="044 4123124 44" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjX-az-TiB">
                                                         <frame key="frameInset" minX="136" minY="56" width="176" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ciudad de México" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33z-p0-VBa">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="ciudadPerfil" text="Ciudad de México" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33z-p0-VBa">
                                                         <frame key="frameInset" minX="136" minY="70" width="176" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
@@ -1216,7 +1223,7 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </button>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8kf-fD-xf2">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="imagenPerfil" translatesAutoresizingMaskIntoConstraints="NO" id="8kf-fD-xf2">
                                                         <frame key="frameInset" minX="18" minY="10" width="110" height="110"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
@@ -1399,6 +1406,13 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="900"/>
+                    <connections>
+                        <outlet property="ciudadPerfil" destination="33z-p0-VBa" id="ua0-VZ-xOH"/>
+                        <outlet property="emailPerfil" destination="9JY-XF-cHO" id="Yrb-WA-yJ6"/>
+                        <outlet property="imagenPerfil" destination="8kf-fD-xf2" id="vxN-ma-lTX"/>
+                        <outlet property="nombrePerfil" destination="T1v-Un-ZlD" id="mGj-O8-faE"/>
+                        <outlet property="telefonoPerfil" destination="NjX-az-TiB" id="oWO-Gt-aHS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqA-2M-YeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1830,7 +1844,7 @@
                         <viewControllerLayoutGuide type="bottom" id="L2r-Dx-hWi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oub-PS-0k1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="608"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nYS-kd-2Vx">
@@ -2192,7 +2206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oLO-Cb-pcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="827" y="2167"/>
+            <point key="canvasLocation" x="825.60000000000002" y="2166.1169415292356"/>
         </scene>
         <!--Menu Adoptar View Controller-->
         <scene sceneID="tXW-rH-hXc">
@@ -2785,7 +2799,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4dX-H2-erl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AKU-Fg-73a">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="592"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CmI-ny-8Ie">
@@ -7272,7 +7286,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOh-sf-tzf">
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="signInFacebook" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOh-sf-tzf" customClass="FBSDKLoginButton">
                                                 <color key="backgroundColor" red="0.1215686275" green="0.21176470589999999" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="ghT-il-QAw"/>
@@ -7545,6 +7559,7 @@
                         <outlet property="contrasenaUno" destination="fVD-PE-ecf" id="G4n-ql-Ewk"/>
                         <outlet property="correoInput" destination="DgN-7G-lyt" id="qaC-NZ-e6H"/>
                         <outlet property="nombreInput" destination="4tk-Kw-N24" id="RbQ-zu-1uU"/>
+                        <outlet property="signInFacebook" destination="LOh-sf-tzf" id="vgd-cx-yCS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7r-pp-Ary" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -7881,12 +7896,12 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="l4d-cJ-xNG"/>
-        <segue reference="dbj-uq-vpS"/>
-        <segue reference="ma5-Qx-n1E"/>
-        <segue reference="m5T-ub-ps7"/>
-        <segue reference="kPC-0k-edi"/>
-        <segue reference="aY2-43-1Qc"/>
-        <segue reference="byD-Jp-YTp"/>
+        <segue reference="o8m-qU-hve"/>
+        <segue reference="Y2v-hA-qLo"/>
+        <segue reference="yf8-I8-4oH"/>
+        <segue reference="pSy-ez-05N"/>
         <segue reference="BOo-6Y-kT8"/>
+        <segue reference="byD-Jp-YTp"/>
+        <segue reference="aY2-43-1Qc"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -21,6 +21,13 @@ class MenuAdoptarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func irPerfil(sender: AnyObject) {
+        print("test")
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("miPerfil") as! MiPerfilViewController
+        self.presentViewController(nextViewController, animated:true, completion:nil)
+    }
     @IBAction func cerrarSesion(sender: UIButton) {
         let preferences = NSUserDefaults.standardUserDefaults()
         
