@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0453CDBC1DB6C387000552E4 /* slide1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0453CDB91DB6C387000552E4 /* slide1.png */; };
+		0453CDBD1DB6C387000552E4 /* slide2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0453CDBA1DB6C387000552E4 /* slide2.png */; };
+		0453CDBE1DB6C387000552E4 /* slide3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0453CDBB1DB6C387000552E4 /* slide3.png */; };
 		380E1A021D81BB1E00EF5A81 /* MenuAdoptarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E1A011D81BB1E00EF5A81 /* MenuAdoptarViewController.swift */; };
 		380E1A041D81BF0800EF5A81 /* AdoptarDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E1A031D81BF0800EF5A81 /* AdoptarDetalleViewController.swift */; };
 		380E1A061D81C92400EF5A81 /* AgregarAdoptarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E1A051D81C92400EF5A81 /* AgregarAdoptarViewController.swift */; };
@@ -155,6 +158,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0453CDB91DB6C387000552E4 /* slide1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slide1.png; sourceTree = "<group>"; };
+		0453CDBA1DB6C387000552E4 /* slide2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slide2.png; sourceTree = "<group>"; };
+		0453CDBB1DB6C387000552E4 /* slide3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slide3.png; sourceTree = "<group>"; };
 		380E1A011D81BB1E00EF5A81 /* MenuAdoptarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAdoptarViewController.swift; sourceTree = "<group>"; };
 		380E1A031D81BF0800EF5A81 /* AdoptarDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptarDetalleViewController.swift; sourceTree = "<group>"; };
 		380E1A051D81C92400EF5A81 /* AgregarAdoptarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgregarAdoptarViewController.swift; sourceTree = "<group>"; };
@@ -369,6 +375,9 @@
 		38BC30621D9C4C35008DD592 /* imagen */ = {
 			isa = PBXGroup;
 			children = (
+				0453CDB91DB6C387000552E4 /* slide1.png */,
+				0453CDBA1DB6C387000552E4 /* slide2.png */,
+				0453CDBB1DB6C387000552E4 /* slide3.png */,
 				3852EB531DB53C6300596D60 /* subir-camara-ico.png */,
 				3852EB511DB5263C00596D60 /* albums-ico.png */,
 				38D11C7F1DB0455D00F39B75 /* raton_juguete.jpg */,
@@ -556,6 +565,7 @@
 				TargetAttributes = {
 					38E5FD2E1D78B70D00FE95DD = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SBE977SH58;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -589,10 +599,12 @@
 				38BC30E91D9C4C42008DD592 /* filtro-5.png in Resources */,
 				38BC30B21D9C4C42008DD592 /* perro-login.png in Resources */,
 				38BC30AB1D9C4C42008DD592 /* head-home.png in Resources */,
+				0453CDBE1DB6C387000552E4 /* slide3.png in Resources */,
 				38BC30CC1D9C4C42008DD592 /* establecimiento.png in Resources */,
 				38BC30C51D9C4C42008DD592 /* arana.png in Resources */,
 				38BC30BA1D9C4C42008DD592 /* anuncios.png in Resources */,
 				38BC30E01D9C4C42008DD592 /* movil.png in Resources */,
+				0453CDBD1DB6C387000552E4 /* slide2.png in Resources */,
 				38BC30D91D9C4C42008DD592 /* regresar.png in Resources */,
 				38BC30CD1D9C4C42008DD592 /* corazon_verde.png in Resources */,
 				38BC30D61D9C4C42008DD592 /* citas.png in Resources */,
@@ -673,6 +685,7 @@
 				38BC30E21D9C4C42008DD592 /* filtro-1.png in Resources */,
 				3852EB691DB5416C00596D60 /* huella-ico-thumb.png in Resources */,
 				38BC30BD1D9C4C42008DD592 /* estetica_activado.png in Resources */,
+				0453CDBC1DB6C387000552E4 /* slide1.png in Resources */,
 				38BC30E31D9C4C42008DD592 /* flecha_menu.png in Resources */,
 				38BC30DC1D9C4C42008DD592 /* home_menu.png in Resources */,
 				38BC30AC1D9C4C42008DD592 /* intro.png in Resources */,
@@ -843,9 +856,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = SBE977SH58;
 				INFOPLIST_FILE = zungu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.init-code.zungu";
+				PRODUCT_BUNDLE_IDENTIFIER = zungu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "zungu/zungu-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -858,9 +872,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = SBE977SH58;
 				INFOPLIST_FILE = zungu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.init-code.zungu";
+				PRODUCT_BUNDLE_IDENTIFIER = zungu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "zungu/zungu-Bridging-Header.h";
 				SWIFT_VERSION = 2.3;

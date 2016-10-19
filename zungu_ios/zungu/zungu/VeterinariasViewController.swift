@@ -74,31 +74,36 @@ class VeterinariasViewController: UIViewController,MKMapViewDelegate,CLLocationM
                 
                 }else{
                     if let jsonResult = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers){
-                    
-                        for x in 0 ..< Int(jsonResult.count){
                         
-                        let array = jsonResult[x] as! NSDictionary
-                        let latitud:CLLocationDegrees = Double("\(array["latitud"]!)")!
-                        let longitud:CLLocationDegrees = Double("\(array["longitud"]!)")!
-                        let latDelta:CLLocationDegrees = 0.01
-                        let lonDelta:CLLocationDegrees = 0.01
-                        
-                        let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
-                        
-                        let location:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitud, longitude: longitud)
-                        
-                        let region: MKCoordinateRegion = MKCoordinateRegionMake(location, span)
-                        
-                        self.map.setRegion(region, animated: true)
-                        
-                        let anotation = MKPointAnnotation()
-                        
-                        anotation.coordinate = location
-                        anotation.title = "\(array["nombre"]!)"
-                        anotation.subtitle = "\(array["ubicacion"]!)"
-                        
-                        self.map.addAnnotation(anotation)
+                        if let items = jsonResult as? [[String: String]]{
+                            
+                            for array in items{
+                                let latitud:CLLocationDegrees = Double("\(array["latitud"]!)")!
+                                let longitud:CLLocationDegrees = Double("\(array["longitud"]!)")!
+                                let latDelta:CLLocationDegrees = 0.01
+                                let lonDelta:CLLocationDegrees = 0.01
+                                
+                                let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+                                
+                                let location:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitud, longitude: longitud)
+                                
+                                let region: MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+                                
+                                self.map.setRegion(region, animated: true)
+                                
+                                let anotation = MKPointAnnotation()
+                                
+                                anotation.coordinate = location
+                                anotation.title = "\(array["nombre"]!)"
+                                anotation.subtitle = "\(array["ubicacion"]!)"
+                                
+                                self.map.addAnnotation(anotation)
+                                
+                            }
+                            
                         }
+                    
+
                     
                     
                     }
@@ -120,30 +125,34 @@ class VeterinariasViewController: UIViewController,MKMapViewDelegate,CLLocationM
             }else{
                 if let jsonResult = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers){
                     
-                    for x in 0 ..< Int(jsonResult.count){
+                    if let items = jsonResult as? [[String: String]]{
                         
-                        let array = jsonResult[x] as! NSDictionary
-                        let latitud:CLLocationDegrees = Double("\(array["latitud"]!)")!
-                        let longitud:CLLocationDegrees = Double("\(array["longitud"]!)")!
-                        let latDelta:CLLocationDegrees = 0.01
-                        let lonDelta:CLLocationDegrees = 0.01
+                        for array in items{
+                            let latitud:CLLocationDegrees = Double("\(array["latitud"]!)")!
+                            let longitud:CLLocationDegrees = Double("\(array["longitud"]!)")!
+                            let latDelta:CLLocationDegrees = 0.01
+                            let lonDelta:CLLocationDegrees = 0.01
+                            
+                            let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+                            
+                            let location:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitud, longitude: longitud)
+                            
+                            let region: MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+                            
+                            self.map.setRegion(region, animated: true)
+                            
+                            let anotation = MKPointAnnotation()
+                            
+                            anotation.coordinate = location
+                            anotation.title = "\(array["nombre"]!)"
+                            anotation.subtitle = "\(array["ubicacion"]!)"
+                            
+                            self.map.addAnnotation(anotation)
+
+                        }
                         
-                        let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
-                        
-                        let location:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitud, longitude: longitud)
-                        
-                        let region: MKCoordinateRegion = MKCoordinateRegionMake(location, span)
-                        
-                        self.map.setRegion(region, animated: true)
-                        
-                        let anotation = MKPointAnnotation()
-                        
-                        anotation.coordinate = location
-                        anotation.title = "\(array["nombre"]!)"
-                        anotation.subtitle = "\(array["ubicacion"]!)"
-                        
-                        self.map.addAnnotation(anotation)
                     }
+                    
                     
                     
                 }

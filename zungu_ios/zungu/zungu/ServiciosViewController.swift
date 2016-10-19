@@ -14,9 +14,9 @@ class ServiciosViewController: UIViewController,UITableViewDelegate,UITableViewD
     @IBOutlet weak var tableHospital: UITableView!
     @IBOutlet weak var tableClinica: UITableView!
     @IBOutlet weak var tableEstetica: UITableView!
-    var ArrayHospital:[[String: String]] = [[String: String]]()
-    var ArrayClinica:[[String: String]] = [[String: String]]()
-    var ArrayEstetica:[[String: String]] = [[String: String]]()
+    var ArrayHospital = [[String: String]]()
+    var ArrayClinica = [[String: String]]()
+    var ArrayEstetica = [[String: String]]()
     var ArrayCount:Int = 0
     
     let veterinaria = 9
@@ -90,18 +90,30 @@ class ServiciosViewController: UIViewController,UITableViewDelegate,UITableViewD
                     
                     if servicio == 1{
                         self.ArrayHospital = [[String: String]]()
-                        for x in 0 ..< Int(jsonResult.count){
-                            self.ArrayHospital.append(jsonResult[x] as! NSDictionary as! [String : String])
+                        if let items = jsonResult as? [[String: String]]{
+                            
+                            for item in items{
+                                self.ArrayHospital.append((item))
+                            }
+                            
                         }
                     }else if servicio == 2{
                         self.ArrayClinica = [[String: String]]()
-                        for x in 0 ..< Int(jsonResult.count){
-                            self.ArrayClinica.append(jsonResult[x] as! NSDictionary as! [String : String])
+                        if let items = jsonResult as? [[String: String]]{
+                            
+                            for item in items{
+                                self.ArrayClinica.append((item))
+                            }
+                            
                         }
                     }else if servicio == 3{
                         self.ArrayEstetica = [[String: String]]()
-                        for x in 0 ..< Int(jsonResult.count){
-                            self.ArrayEstetica.append(jsonResult[x] as! NSDictionary as! [String : String])
+                        if let items = jsonResult as? [[String: String]]{
+                            
+                            for item in items{
+                                self.ArrayEstetica.append((item))
+                            }
+                            
                         }
                     }
 

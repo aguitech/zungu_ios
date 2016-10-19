@@ -92,12 +92,14 @@ class TiendaViewController: UIViewController,UICollectionViewDelegate,UICollecti
                 if let jsonResult = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers){
                     
                     self.ArrayList = [[String: String]]()
-                    for x in 0 ..< Int(jsonResult.count){
+                    if let items = jsonResult as? [[String: String]]{
                         
-                        self.ArrayList.append(jsonResult[x] as! NSDictionary as! [String : String])
-                        
+                        for item in items{
+                            self.ArrayList.append((item))
+                        }
                         
                     }
+                    
                     dispatch_async(dispatch_get_main_queue(), {
                         
                         self.collectionTienda.reloadData()

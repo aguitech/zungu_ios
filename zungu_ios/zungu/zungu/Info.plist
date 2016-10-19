@@ -2,21 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key>
-	<string>Lo necesito para que puedas subir la imagen de la mascota</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Lo necesito para que puedas subir la imagen de la mascota</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Necesito saber su ubicación para localizar las veterinarias cercanas.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Necesito saber su ubicación para localizar las veterinarias cercanas.</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -35,8 +20,23 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Lo necesito para que puedas subir la imagen de la mascota</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Necesito saber su ubicación para localizar las veterinarias cercanas.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Necesito saber su ubicación para localizar las veterinarias cercanas.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Lo necesito para que puedas subir la imagen de la mascota</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -48,8 +48,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>

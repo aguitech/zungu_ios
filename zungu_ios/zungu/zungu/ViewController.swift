@@ -17,13 +17,16 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource{
     
     var arrPageTitle: NSArray = NSArray()
     var arrPagePhoto: NSArray = NSArray()
+    var arrPageSlider: NSArray = NSArray()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.arrPageTitle = ["Encuentra el mejor veterinario para el cuidado de tu mascota","Adopta un amigo y cuida de él,ubica la mascota ideal para ti","Administra el perfil de tu mascota y compártelo con familiares y amigos","Forma parte de nuestra red veterinaria y encuentra todos los servicios que tu mascota necesita."]
+        self.arrPageTitle = ["Encuentra el mejor veterinario para el cuidado de tu mascota","Adopta un amigo y cuida de él,ubica la mascota ideal para ti","Administra el perfil de tu mascota y compártelo con familiares y amigos","Forma parte de nuestra red veterinaria y encuentra todos los servicios que tu mascota necesita.","hola"]
         self.arrPagePhoto = ["gif1","gif2","gif3","gif1"]
+        self.arrPageSlider = ["slide1","slide2","slide3","slide1"]
+        
         
         self.dataSource = self
         
@@ -73,7 +76,10 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource{
         index += 1
         if (index == arrPageTitle.count)
         {
-            return nil;
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            
+            let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("HomeView") as! HomeController
+            self.presentViewController(nextViewController, animated:true, completion:nil)
         }
         return getViewControllerAtIndex(index)
     }
@@ -84,6 +90,7 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource{
         let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageContentViewController") as! PagePantalla2Controller
         pageContentViewController.titleIndex = "\(arrPageTitle[index])"
         pageContentViewController.imageFIle = "\(arrPagePhoto[index])"
+        pageContentViewController.textoSlider = "\(arrPageSlider[index])"
         pageContentViewController.pageIndex = index
         return pageContentViewController
     }

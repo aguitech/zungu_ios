@@ -12,10 +12,12 @@ class PagePantalla2Controller: UIViewController {
     
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var textoSlide: UITextView!
+    @IBOutlet weak var imageSlider: UIImageView!
     
     var titleIndex: String!
     var imageFIle: String!
     var pageIndex: Int = 0
+    var textoSlider: String!
     
 
     override func viewDidLoad() {
@@ -27,6 +29,7 @@ class PagePantalla2Controller: UIViewController {
         self.webView.userInteractionEnabled = false
         
         self.textoSlide.text = self.titleIndex
+        imageSlider.image = UIImage(named: textoSlider)
         
     }
 

@@ -11,7 +11,7 @@ import UIKit
 class AgendarCitaViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
 
     @IBOutlet weak var doctoresSelect: UITextField!
-    var ArrayList:[[String: String]] = [[String: String]]()
+    var ArrayList = [[String: String]]()
     let pickerView = UIPickerView()
     var idvet:Int?
     var idDoctor = 0
@@ -74,14 +74,16 @@ class AgendarCitaViewController: UIViewController,UIPickerViewDelegate,UIPickerV
             }else{
                 if let jsonResult = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers){
                     
-                    self.ArrayList = [[String: String]]()
-                    for x in 0 ..< Int(jsonResult.count){
+                    //self.ArrayList = [[String: String]]()
+                    if let items = jsonResult as? [[String: String]]{
                         
-                        self.ArrayList.append(jsonResult[x] as! NSDictionary as! [String : String])
-                        
+                        for item in items{
+                            self.ArrayList.append((item))
+                        }
                         
                     }
                     dispatch_async(dispatch_get_main_queue(), {
+                      
                         self.pickerView.reloadAllComponents()
                         
                         return
