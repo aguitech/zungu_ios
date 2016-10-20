@@ -168,6 +168,10 @@
 		DC0406541DB7269D004B92BB /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0406471DB7269D004B92BB /* FBSDKShareKit.framework */; };
 		DC0406551DB7269D004B92BB /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC0406481DB7269D004B92BB /* LICENSE.txt */; };
 		DC0406561DB7269D004B92BB /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC0406491DB7269D004B92BB /* README.txt */; };
+		DC04065C1DB7F664004B92BB /* PagoTDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC04065B1DB7F664004B92BB /* PagoTDCViewController.swift */; };
+		DCFD21431DB83E5400E2CAF1 /* InstruccionesSPEI.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFD21421DB83E5400E2CAF1 /* InstruccionesSPEI.png */; };
+		DCFD21451DB847EF00E2CAF1 /* fondoFormasPago.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFD21441DB847EF00E2CAF1 /* fondoFormasPago.png */; };
+		DCFD21471DB850FE00E2CAF1 /* PagoSPEIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFD21461DB850FE00E2CAF1 /* PagoSPEIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -334,6 +338,10 @@
 		DC0406471DB7269D004B92BB /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		DC0406481DB7269D004B92BB /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		DC0406491DB7269D004B92BB /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		DC04065B1DB7F664004B92BB /* PagoTDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoTDCViewController.swift; sourceTree = "<group>"; };
+		DCFD21421DB83E5400E2CAF1 /* InstruccionesSPEI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InstruccionesSPEI.png; sourceTree = "<group>"; };
+		DCFD21441DB847EF00E2CAF1 /* fondoFormasPago.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoFormasPago.png; sourceTree = "<group>"; };
+		DCFD21461DB850FE00E2CAF1 /* PagoSPEIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoSPEIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,6 +410,8 @@
 				389464F31DA2BBCB004979D7 /* MisPagosViewController.swift */,
 				38D11C7D1DB02A0500F39B75 /* MascotaAgregadaViewController.swift */,
 				38D11C871DB0662F00F39B75 /* CitaGuardadaViewController.swift */,
+				DC04065B1DB7F664004B92BB /* PagoTDCViewController.swift */,
+				DCFD21461DB850FE00E2CAF1 /* PagoSPEIViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -409,6 +419,8 @@
 		38BC30621D9C4C35008DD592 /* imagen */ = {
 			isa = PBXGroup;
 			children = (
+				DCFD21441DB847EF00E2CAF1 /* fondoFormasPago.png */,
+				DCFD21421DB83E5400E2CAF1 /* InstruccionesSPEI.png */,
 				0453CDB91DB6C387000552E4 /* slide1.png */,
 				0453CDBA1DB6C387000552E4 /* slide2.png */,
 				0453CDBB1DB6C387000552E4 /* slide3.png */,
@@ -650,6 +662,7 @@
 				0453CDBE1DB6C387000552E4 /* slide3.png in Resources */,
 				38BC30CC1D9C4C42008DD592 /* establecimiento.png in Resources */,
 				38BC30C51D9C4C42008DD592 /* arana.png in Resources */,
+				DCFD21431DB83E5400E2CAF1 /* InstruccionesSPEI.png in Resources */,
 				38BC30BA1D9C4C42008DD592 /* anuncios.png in Resources */,
 				38BC30E01D9C4C42008DD592 /* movil.png in Resources */,
 				0453CDBD1DB6C387000552E4 /* slide2.png in Resources */,
@@ -658,6 +671,7 @@
 				38BC30D61D9C4C42008DD592 /* citas.png in Resources */,
 				38BC30F61D9CAC45008DD592 /* carrito.png in Resources */,
 				389C9FC21DAD496400A508EF /* share_button.png in Resources */,
+				DCFD21451DB847EF00E2CAF1 /* fondoFormasPago.png in Resources */,
 				38BC30A91D9C4C42008DD592 /* intro3.png in Resources */,
 				3852EB5A1DB53F1300596D60 /* reptil-ico.png in Resources */,
 				38BC30D11D9C4C42008DD592 /* star.png in Resources */,
@@ -765,6 +779,7 @@
 				380E1A061D81C92400EF5A81 /* AgregarAdoptarViewController.swift in Sources */,
 				3889DA511D831D5C004B5A5C /* DetalleTiendaViewController.swift in Sources */,
 				389464EB1DA1CD29004979D7 /* OpcionesPagoViewController.swift in Sources */,
+				DC04065C1DB7F664004B92BB /* PagoTDCViewController.swift in Sources */,
 				38E5FD561D78BB0B00FE95DD /* PagePantalla2Controller.swift in Sources */,
 				38D11C861DB0648A00F39B75 /* popUpProximaViewController.swift in Sources */,
 				38C770CD1D92EB0A00653FD2 /* ColMascCollectionViewCell.swift in Sources */,
@@ -775,6 +790,7 @@
 				38D11C7E1DB02A0500F39B75 /* MascotaAgregadaViewController.swift in Sources */,
 				3860DD051D999B4F00DF3E74 /* RedVeterinariosViewController.swift in Sources */,
 				38278A821D959F9000B9BB80 /* SwiftLoading.swift in Sources */,
+				DCFD21471DB850FE00E2CAF1 /* PagoSPEIViewController.swift in Sources */,
 				38194BC21D7E10DD008FAC36 /* AdoptarViewController.swift in Sources */,
 				3860DD0B1D9AE94C00DF3E74 /* AgendarCitaViewController.swift in Sources */,
 				38D11C821DB048C800F39B75 /* PopUpAnuncioViewController.swift in Sources */,
